@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Frontend</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+     <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
+</head>
+<header>
+    <!-- Здесь будет навигация -->
+
+
+
+    <nav>
+        <div class="nav-bar">
+        <i class='bx bx-menu sidebarOpen'></i>
+        <span class="sagkiun navsagkiun"><a href="/"><img src="/icons/lev.png" alt="Bruno" width="75" ></a></span>
+      
+        <div class="menu">
+        <div class="kuledsamin">
+        <span class="sagkiun"><a href="#">Навигация</a></span>
+        <i class='bx bx-x siderbarClose'></i>
+        </div>
+      
+        <ul class="nav-links">
+        <li><a href="#section-1">Главная</a></li>
+        <li><a href="#section-2">Мой стек</a></li>
+        <li><a href="#section-3">Проекты</a></li>
+        <li><a href="#section-4">Эксперементы</a></li>
+        <li><a href="#section-5">Контакты</a></li>
+        </ul>
+        </div>
+      
+        <div class="poiskovay">
+        <div class="dark-light">
+        <i class='bx bx-moon moon'></i>
+        <i class='bx bx-sun sun'></i>
+        </div>
+      
+        <div class="poiskova-stroka">
+        <div class="saiunkluca">
+        <i class='bx bx-x cancel'></i>
+        <i class='bx bx-search search'></i>
+        </div>
+      
+        <div class="puesko-dsamva">
+        <input type="text" placeholder="Поиск...">
+        <i class='bx bx-search'></i>
+        </div>
+        </div>
+        </div>
+        </div>
+        </nav>
+</header>
+<body>  
+    
+        <!--Основа-->
+        <main class="main">
+            <section class="hero main__section" id="section-1">
+                <div class="hero__container">
+                    <div class="hero__text-container">
+                        <br><br><br>
+                        <h2  data-localization-key="title" class="hero__title">Привет, я Евгений!</h2>
+                        <p data-localization-key="subtitle" class="hero__subtitle">Будем знакомы!</p>
+                        <div class="wrap">
+                            <button class="button" id="myBtn">Подробнее о себе</a>
+                                <!-- Модальное окно -->
+                        </div>
+                        <!-- Модальное окно -->
+                        <div id="myModal" class="modal">
+                    
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <p>Меня зовут Евгений Ладыгин,  я фрилансер-фронтенд-разработчик . Я взрослый ( даже очень, говорят, хотя я не чуствую проблем) 
+                                парень, которому нравится делать странные вещи с помощью веб-технологий.
+                                Мне нравится решать проблемы дизайна, создавать умный пользовательский интерфейс 
+                                и придумывать полезное взаимодействие, разрабатывать насыщенные веб-приложения и веб-сайты .
+                                Когда я не работаю и не возюсь с кодом, я изучаю, что-то новое. На самом деле, люблю моделировать и возиться с детьми.</p>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <figure class="hero__image-container">
+                        <img width="400" height="480" draggable="auto" src="/icons/developer.svg" alt="" class="hero__image">
+                    </figure>
+                </div>
+            </section>          
+    <br>    
+    <section class="stack main__section" id="section-2">
+        <div class="wrapper">
+            <br><br>
+            <h2 data-localization-key="stack" class="stack__title">Мой стек</h2>
+            <ul class="stack__list">
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="/icons/html.svg" alt="">
+                    <span>HTML5</span>
+                </li>
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="/icons/css.svg" alt="">
+                    <span>CSS3</span>
+                </li>
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="icons/js.svg" alt="">
+                    <span>JavaScript</span>
+                </li>
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="icons/react.svg" alt="">
+                    <span>React</span>
+                </li>
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="icons/Vue.png" alt="">
+                    <span>Vue.js</span>
+                </li>
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="icons/bootstrap.png" alt="">
+                    <span>Bootstrap</span>
+                </li>
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="icons/taiwind.jpg" alt="">
+                    <span>Tailwind CSS</span>
+                </li>
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="icons/ts.svg" alt="">
+                    <span>TypeScript</span>
+                </li>
+                
+            </ul>
+            <h3 data-localization-key="tools" class="stack__subtitle">Инструменты и прочее:</h3>
+            <ul class="stack__list">
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="icons/vscode.svg" alt="">
+                    <span>VS Code</span>
+                </li>
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="icons/figma.png" alt="">
+                    <span>Figma</span>
+                </li>
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="icons/git.svg" alt="">
+                    <span>Git</span>
+                </li>
+                <li>
+                    <img draggable="false" loading="lazy" width="48" height="48" src="icons/GitVerse.jpg" alt="">
+                    <span>GitVerse</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <br><br>
+    <section class="projects main__section" id="section-3">
+        <div class="wrapper">
+            <br><br>
+            <h2 data-localization-key="projects" class="projects__title">Проекты</h2>
+            
+            <div class="imonials">
+                <div class="scroller">
+                    <div class="item" >
+                        <img src="/images/adham.avif" alt="Designer-Coder" width="750" >
+                        <div class="card">
+                            <p>
+                                Сайт дизайнера – разработчика из Сиднея ( Австралия). Отличается неброским оригинальным дизайном 
+                                и точностью проработки мелких деталей. 
+                                Ведет свой блок на сайте и дает полезные советы новичкам.
+                            </p>
+                            <a href="https://www.adhamdannaway.com/" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item" >
+                        <img src="/images/cassie.avif" alt="Cassie" width="750" >
+                        <div class="card">
+                            <p>
+                                Кэсси — разработчик интерфейсов в Clearleft, которая любит создавать интересные 
+                                интерактивные вещи с помощью кода. Есть страница с мини играми на JavaScript и код приложений
+                            </p>
+                            <a href="https://www.cassie.codes/" target="_blank">Подробнее</a>
+                        
+                        </div>
+                    </div>
+                    <div class="item" >
+                        <img src="/images/bruno.avif" alt="Bruno" width="750" >
+                        <div class="card">
+                            <p>
+                                Бруно был бывшим ведущим разработчиком в Immersive Garden. 
+                                Сейчас он работает креативным разработчиком и фрилансером. 
+                                Сайт демонстрирует уменее работы с Java - коммпонентами.
+                            </p>
+                            <a href="https://bruno-simon.com/" target="_blank">Подробнее</a>
+                        </div>                     
+                    </div>
+                    <div class="item" >
+                        <img src="/images/squadeasy.webp" alt="squadeasy" width="750" >
+                        <div class="card">
+                            <p>
+                                Когда вы посетите сайт Squadeasy, вы заметите их анимированный талисман, 
+                                Буги, в центре внимания. Голова Буги подпрыгивает, у него кружится голова, 
+                                если вы прокручиваете страницу слишком быстро, и он даже взаимодействует 
+                                с вашим курсором в юмористической манере, «съедая» его, если вы подходите слишком близко.
+                            </p>
+                            <a href="https://www.squadeasy.com/" target="_blank">Подробнее</a>
+                        </div>                     
+                    </div>
+                    <div class="item" >
+                        <img src="/images/aplle.webp" alt="apple" width="750" >
+                        <div class="card">
+                            <p>
+                                Веб-сайт Apple примечателен своим инновационным использованием изображений и движущихся меню, 
+                                которые дают дополнительный уровень интерактивности. 
+                                Эти особенности дизайна не являются технически необходимыми, 
+                                но они улучшают общее восприятие пользователем и добавляют таинственности.
+                            </p>
+                            <a href="https://www.apple.com/" target="_blank">Подробнее</a>
+                        </div>                     
+                    </div>
+                </div>
+                    <span class="btn prev">&lt;</span>
+                    <span class="btn next">&gt;</span>
+             </div>
+            <br>
+    </section>
+    <section class="experiments_main__section" id="section-4">
+        <div class="wrapper">
+            <br><br>
+            <h2 data-localization-key="projects" class="experiments__title">Эксперементы и Открытый код</h2>
+            <section id="experiments" class="experiments-section">
+                <div class="section-mask"></div>
+                <div class="inner-container">
+                    <div class="section-text-mask">                       
+                    </div>
+                    <div class="section-text-mask">
+                    </div>
+                </div>
+                <div class="inner-container hidden">
+                    <div class="experiments-mask-reveal">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="inner-container">
+                        <a href="http://codepen.io/rickzanutta/pen/yjaeB" target="_blank" rel="noopener" class="experiment">
+                            <div class="experiment-mask"></div>
+                            <div class="experiment-number-mask">
+                                <span>01</span>
+                            </div>
+                            <div class="experiment-circle">
+                                <div class="experiment-image"></div>
+                            </div>
+                            <div class="experiment-title-area">
+                                <div class="experiment-title-label"></div>
+                                <div class="experiment-title">CSS3 Загрузка страницы</div>
+                            </div>
+                            <div class="experiment-number-area">&nbsp;</div>
+                        </a>
+                        <a href="http://codepen.io/rickzanutta/pen/NNzGVd" target="_blank" rel="noopener" class="experiment">
+                            <div class="experiment-mask"></div>
+                            <div class="experiment-number-mask">
+                                <span>02</span>
+                            </div>
+                            <div class="experiment-circle">
+                                <div class="experiment-image"></div>
+                            </div>
+                            <div class="experiment-title-area">
+                                <div class="experiment-title-label"></div>
+                                <div class="experiment-title">Анимация поиска</div>
+                            </div>
+                            <div class="experiment-number-area">&nbsp;</div>
+                        </a>
+                        <a href="https://github.com/Riccardo-Zanutta/brick" target="_blank" rel="noopener" class="experiment">
+                            <div class="experiment-mask"></div>
+                            <div class="experiment-number-mask">
+                                <span>03</span>
+                            </div>
+                            <div class="experiment-circle">
+                                <div class="experiment-image"></div>
+                            </div>
+                            <div class="experiment-title-area">
+                                <div class="experiment-title-label"></div>
+                                <div class="experiment-title">Тема кирпичный котел</div>
+                            </div>
+                            <div class="experiment-number-area">&nbsp;</div>
+                        </a>
+                        <a href="http://codepen.io/rickzanutta/pen/aOQddB" target="_blank" rel="noopener" class="experiment">
+                            <div class="experiment-mask"></div>
+                            <div class="experiment-number-mask">
+                                <span>04</span>
+                            </div>
+                            <div class="experiment-circle">
+                                <div class="experiment-image"></div>
+                            </div>
+                            <div class="experiment-title-area">
+                                <div class="experiment-title-label"></div>
+                                <div class="experiment-title"> Открытие и закрытие меню</div>
+                            </div>
+                            <div class="experiment-number-area">&nbsp;</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <br>
+        </div> 
+    </section> 
+    <section class="contact_main__section" id="section-5">
+        <div class="wrapper">
+            <h2 data-localization-key="projects" class="contact__title">Контакты:</h2>
+            <section id="contact" class="contact-section"> 
+                <div class="container">
+                    <div style="text-align:center">
+                        <p>Оставьте предложение о работе или просто напишите мне:</p>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <img src="/images/home.png" style="width:100%">
+                      </div>
+                      <div class="column">
+                        <form method="post" action="mailto: lev@chgb1.ru">
+                          <label for="fname">Имя</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Ваше имя..">
+                          <label for="lname">Фамилия</label>
+                          <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия..">
+                          <label for="country">Страна</label>
+                          <select id="country" name="country">
+                            <option value="australia">Россия</option>
+                            <option value="canada">Белорусия</option>
+                            <option value="usa">Казахстан</option>
+                          </select>
+                          <label for="subject">Объект</label>
+                          <textarea id="subject" name="subject" placeholder="Написать нечто.." style="height:170px"></textarea>
+                          <input type="submit" value="Отправить">
+                        </form>
+                      </div>
+                    </div>
+                  </div>    
+            </section>
+        </div>
+    </section>
+    <footer>
+        <!-- Здесь будет подвал -->
+    </footer>
+    <script>
+        const testimonials = document.querySelector('.imonials');
+        const scroller = testimonials.querySelector('.scroller');
+        const nextBtn = testimonials.querySelector('.btn.next');
+        const prevBtn = testimonials.querySelector('.btn.prev');
+        const itemWidth = testimonials.querySelector('.item').clientWidth;
+       
+        nextBtn.addEventListener('click', scrollToNextItem);
+        prevBtn.addEventListener('click', scrollToPrevItem);
+       
+        function scrollToNextItem() {
+            scroller.scrollBy({left: itemWidth, top: 0, behavior: 'smooth'});
+        }
+        function scrollToPrevItem() {
+            scroller.scrollBy({left: -itemWidth, top: 0, behavior: 'smooth'});
+        }
+     </script>
+    <script src="/jc/main.jc"></script>
+    <script src="/jc/modal.jc"></script>
+    <script src="/jc/carousel.jc"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

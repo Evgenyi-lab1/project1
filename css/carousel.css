@@ -1,0 +1,46 @@
+.imonials {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+ }
+ .scroller {
+    overflow-x: scroll;
+    display: flex;
+ }
+ .item {
+    min-width: 100%;
+    min-height: 80px; /* To start with */
+    color: #94c1ee; /* Как в основном стиле */
+ }
+ .scroller {
+    /* Здесь существующие стили */
+    scroll-snap-type: x mandatory;
+ }
+ .item {
+    /* Здесь существующие стили */
+    scroll-snap-align: center;
+ }
+ .imonials .btn {
+    position: absolute;
+    top: 50%;
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    background-color: rgba(153, 177, 201, 0.3);
+    z-index: 2;
+    line-height: 10px;
+    text-align: center;
+    color: rgb(31, 58, 214);
+    font-weight: bold;
+ }
+ .imonials .btn:hover{
+    background-color: rgba(95, 106, 117, 0.5);
+    cursor: pointer;
+ }
+ .imonials .btn.next {
+    right: 20px;
+ }
+ .imonials .btn.prev {
+    left: 20px;
+ }

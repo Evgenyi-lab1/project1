@@ -1,0 +1,25 @@
+// Получение Модального объекта
+var modal = document.getElementById("myModal");
+
+// Отслеживает кнопку которая откроет модальный элемент
+var btn = document.getElementById("myBtn");
+
+// Элемент закрывающий Модальный объект
+var span = document.getElementsByClassName("close")[0];
+
+// Нажатие на основную кнопку открывает модальное окно
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Отслеживание закрытия модального окна крестиком
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Когда пользователь нажимает в любом месте за пределами модального меню, закройте его
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
