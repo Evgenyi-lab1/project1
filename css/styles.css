@@ -823,6 +823,46 @@ html, body {
     background-color: #f2f2f2;
     padding: 10px;
   }
+  .main .calk__title {
+    text-align: center;
+    font-weight: 900;
+    font-size: clamp(2rem,4vw,3rem);
+    color: var(--search-text) 
+  }
+.main .calk__list li {
+  text-align: center;
+  font-size: 1.125rem
+}
+
+.main .calk__list li span {
+  display: block;
+  margin-top: 8px
+}
+
+.main .menu__subtitle {
+  text-align: center;
+  margin: 46px 0;
+  font-size: clamp(1.5rem,4vw,2rem);
+  color: var(--search-text)
+}
+.main .kol-vo {
+  text-align: left;
+  margin: 16px 0;
+  font-size: clamp(1.5rem,3vw,1rem);
+  color: var(--search-text)
+}
+.main .buttons {
+  display: flex;
+  margin: 16px 0;
+  justify-content: left;
+}
+.main .answers {
+  text-align: left;
+  margin: 5px 1px;
+  font-size: clamp(1.2rem,2vw,1rem);
+  color: var(--search-text)  
+}
+
   
   /* Создайте два столбца, которые плавают рядом друг с другом */
   .column {

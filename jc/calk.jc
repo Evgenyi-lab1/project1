@@ -1,0 +1,16 @@
+function calc() {
+    const form = document.getElementById('calk');
+    const kof = document.querySelector('input[name="k_1"]:checked').value
+    const men = parseInt(document.getElementById('men').value);
+    const b_men = parseInt(document.getElementById('b_men').value);
+    const wom = parseInt(document.getElementById('wom').value);
+    const b_wom = parseInt(document.getElementById('b_wom').value);
+    var answers = document.querySelector('.answers');
+    const vino_r = Math.ceil((wom + (b_wom * 2) + ((men * 0.2) + (b_men * 0.5)) + 1) * kof);
+    const visky_r = Math.ceil(((wom * 0.2) + b_wom  + (men  + (b_men * 2)) + 1) * kof);
+    const salat_r = ((wom * 0.2) + (b_wom * 0.4)  + (men * 0.4) + (b_men * 0.7) ) * kof;
+    const shshl_r = ((wom * 0.3) + (b_wom * 0.7)  + (men * 0.6) + (b_men * 1.2) ) * kof;
+    answers.textContent = `Для корпоратива потребуеться: ${vino_r} бутылок вина, ${visky_r} бутылок крепких алкогольных напитков
+    , ${salat_r} килограмма салатов и прочей закуски ${shshl_r} килограмма шашлыка или горячих блюд`; 
+    
+}
